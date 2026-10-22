@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gayathri Muthukrishnan | Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#07070d;--fg:#f4f4fb;--mute:#a9a9c2;--card:#10101c;--line:#26263a;--blue:#4f9dff;--pink:#ff4fa3;--grad:linear-gradient(90deg,#4f9dff,#ff4fa3);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Inter',Arial,sans-serif;line-height:1.65;font-size:16px;overflow-x:hidden}
+a{color:inherit}
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;animation:drift 18s ease-in-out infinite alternate}
+.b1{width:420px;height:420px;background:var(--blue);top:-120px;left:-100px}
+.b2{width:380px;height:380px;background:var(--pink);top:30%;right:-140px;animation-delay:-6s}
+.b3{width:320px;height:320px;background:#6d4bff;bottom:-120px;left:25%;animation-delay:-12s}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.2)}}
+#glow{position:fixed;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,rgba(255,79,163,.18),rgba(79,157,255,.1) 45%,transparent 70%);pointer-events:none;z-index:1;left:-999px;top:-999px}
+.wrap{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;justify-content:flex-end;padding:22px 0;font-size:13px;letter-spacing:2px;text-transform:uppercase;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--mute);transition:color .2s}
+nav a:hover{color:var(--pink)}
+header{padding:40px 0 56px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+.txt>*{opacity:0;animation:up .8s ease forwards}
+.txt>:nth-child(1){animation-delay:.1s}.txt>:nth-child(2){animation-delay:.25s}.txt>:nth-child(3){animation-delay:.45s}.txt>:nth-child(4){animation-delay:.65s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.role{font-family:'Space Grotesk',Arial,sans-serif;font-size:15px;letter-spacing:2px;color:var(--blue);margin-bottom:14px;min-height:24px}
+.cur{display:inline-block;width:2px;height:1em;background:var(--pink);margin-left:3px;vertical-align:-2px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+h1{font-family:'Space Grotesk',Arial,sans-serif;font-size:clamp(40px,9vw,74px);line-height:1.02;margin:0 0 20px;letter-spacing:-1.5px;background:linear-gradient(90deg,#4f9dff,#ff4fa3,#4f9dff);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .8s ease .25s forwards,shine 5s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.lead{max-width:520px;font-size:18px;color:var(--mute);margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:99px;border:1px solid var(--line);text-decoration:none;font-size:14px;font-weight:500;transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-3px);border-color:var(--pink)}
+.btn.fill{background:var(--grad);border:0;color:#07070d;font-weight:600}
+.btn.fill:hover{box-shadow:0 8px 28px rgba(255,79,163,.4)}
+.art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 0 22px rgba(79,157,255,.35))}
+.float{animation:fl 6s ease-in-out infinite;transform-box:fill-box}
+.float2{animation:fl 7s ease-in-out -3s infinite;transform-box:fill-box}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.draw{stroke-dasharray:220;stroke-dashoffset:220;animation:dr 1.6s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.spin{animation:sp 12s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes sp{to{transform:rotate(360deg)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:40px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}
+.stat b{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--mute)}
+.mq{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;white-space:nowrap;position:relative;z-index:2}
+.mq div{display:inline-block;animation:mq 30s linear infinite}
+.mq span{margin:0 24px;font-family:'Space Grotesk',Arial,sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--mute)}
+.mq span:nth-child(3n){color:var(--pink)}.mq span:nth-child(3n+1){color:var(--blue)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:42px 0;border-top:1px solid var(--line)}
+h2{margin:0;font-family:'Space Grotesk',Arial,sans-serif;font-size:13px;letter-spacing:3px;font-weight:700;text-transform:uppercase;padding-top:4px;color:var(--blue)}
+.js section{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.js section.in{opacity:1;transform:none}
+.item{margin-bottom:24px}.item:last-child{margin-bottom:0}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.t{font-weight:600}.m{color:var(--mute);font-size:14px}
+ul{margin:8px 0 0;padding-left:18px}li{margin-bottom:4px;color:#d8d8ea}li::marker{color:var(--pink)}
+.skills{display:grid;gap:14px}
+.skills div{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:start}
+.skills b{font-weight:600;color:var(--mute)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips i,.tags span{font-style:normal;border:1px solid var(--line);border-radius:99px;padding:3px 13px;font-size:13px;background:var(--card);transition:transform .2s,background .2s,color .2s,border-color .2s}
+.chips i:hover,.tags span:hover{background:var(--grad);color:#07070d;border-color:transparent;transform:translateY(-3px)}
+.card{position:relative;background:var(--card);border-radius:20px;padding:28px;border:1px solid transparent;background-clip:padding-box;transition:transform .3s,box-shadow .3s}
+.card::before{content:"";position:absolute;inset:-1px;z-index:-1;border-radius:21px;background:linear-gradient(120deg,#4f9dff,#ff4fa3,#4f9dff);background-size:200% 200%;animation:bg 5s linear infinite}
+@keyframes bg{to{background-position:200% 200%}}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 50px rgba(79,157,255,.18)}
+.card h3{font-family:'Space Grotesk',Arial,sans-serif;font-size:26px;margin:0 0 4px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+footer{position:relative;z-index:2;padding:36px 0 48px;border-top:1px solid var(--line);font-size:14px;color:var(--mute);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.art{max-width:300px}section{grid-template-columns:1fr;gap:12px}.skills div{grid-template-columns:1fr;gap:4px}nav{justify-content:flex-start}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.txt>*,.js section{opacity:1!important;transform:none!important}.draw{stroke-dashoffset:0}h1{opacity:1}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div id="glow" aria-hidden="true"></div>
+<div class="wrap">
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+<header>
+<div class="hero"><div class="txt">
+<div class="role"><span id="tw">Full Stack Developer</span><span class="cur"></span></div>
+<h1>Gayathri<br>Muthukrishnan</h1>
+<p class="lead">I build complete websites for clients, from understanding what they need to design, code, database and going live.</p>
+<div class="btns"><a class="btn fill" href="#project">View my work</a><a class="btn" href="mailto:gayathrimuthukrishnan22@gmail.com">Email me</a><a class="btn" href="https://github.com/gayathrimuthukrishnan22-spec">GitHub</a></div>
+</div>
+<div class="art"><svg viewBox="0 0 360 300" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round" role="img" aria-label="Illustration of a code window and a code card">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f9dff"/><stop offset="1" stop-color="#ff4fa3"/></linearGradient></defs>
+<g class="float"><rect x="20" y="30" width="270" height="200" rx="14"/><line x1="20" y1="62" x2="290" y2="62"/><circle cx="40" cy="46" r="4" fill="#ff4fa3" stroke="none"/><circle cx="56" cy="46" r="4" fill="#4f9dff" stroke="none"/><circle cx="72" cy="46" r="4" fill="#a9a9c2" stroke="none"/>
+<path class="draw" d="M44 94h110" style="animation-delay:.6s"/><path class="draw" d="M64 118h150" style="animation-delay:1s"/><path class="draw" d="M64 142h90" style="animation-delay:1.4s"/><path class="draw" d="M44 166h130" style="animation-delay:1.8s"/></g>
+<g class="float2"><rect x="196" y="150" width="144" height="112" rx="14" fill="#10101c"/><text x="268" y="212" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="38" font-weight="700" fill="url(#g)" stroke="none">&lt;/&gt;</text><path d="M214 238h108"/></g>
+<circle class="spin" cx="318" cy="52" r="24" stroke-dasharray="4 7"/><circle cx="318" cy="52" r="6" fill="#ff4fa3" stroke="none"/></svg></div></div>
+<div class="stats"><div class="stat"><b data-n="10" data-s="+">0</b><span>Live projects</span></div><div class="stat"><b data-n="6" data-s="+">0</b><span>Months experience</span></div><div class="stat"><b data-n="1" data-s=" yr">0</b><span>Full stack course</span></div></div>
+</header>
+</div>
+<div class="mq" aria-hidden="true"><div><span>React</span><span>Node.js</span><span>PHP</span><span>Java</span><span>SQL</span><span>ClickHouse</span><span>Neon</span><span>Git</span><span>Postman</span><span>Render</span><span>React</span><span>Node.js</span><span>PHP</span><span>Java</span><span>SQL</span><span>ClickHouse</span><span>Neon</span><span>Git</span><span>Postman</span><span>Render</span></div></div>
+<div class="wrap">
+<section id="about"><h2>About</h2>
+<div>Full Stack Developer with 6+ months of hands-on experience across 10+ live projects. I work with React, Node.js and PHP, and manage data with SQL, ClickHouse and Neon (Serverless PostgreSQL). I completed a 1-year Full Stack Development course at Apollo Institute and hold a B.Com (Computer Applications).</div></section>
+<section id="skills"><h2>Skills</h2>
+<div class="skills">
+<div><b>Front-End</b><span class="chips"><i>React</i><i>HTML5</i><i>CSS3</i><i>JavaScript</i></span></div>
+<div><b>Back-End</b><span class="chips"><i>Node.js</i><i>PHP</i><i>Java</i></span></div>
+<div><b>Databases</b><span class="chips"><i>SQL</i><i>ClickHouse</i><i>Neon (PostgreSQL)</i></span></div>
+<div><b>Tools</b><span class="chips"><i>Git</i><i>GitHub</i><i>VS Code</i><i>Postman</i><i>Render</i></span></div>
+</div></section>
+<section id="project"><h2>Featured Project</h2>
+<div class="card">
+<h3>Buy Sale Rental Property</h3>
+<div class="m">Live client website · Real estate in Madurai, Chennai and Coimbatore</div>
+<div class="tags"><span>React</span><span>Node.js</span><span>PHP</span><span>Neon</span><span>Render</span></div>
+<ul><li>Took the project end to end: client requirements, design, front end, back end, database and deployment.</li><li>Built property search by category, an enquiry form, a booking page and a matches page.</li><li>Used Git and GitHub for version control and deployed the site live on Render.</li></ul>
+<p style="margin:20px 0 0"><a class="btn fill" href="https://buysalerentalproperty.com/" target="_blank" rel="noopener">Visit live site</a></p>
+</div></section>
+<section id="experience"><h2>Experience</h2>
+<div>
+<div class="item"><div class="row"><span class="t">Full Stack Developer, SDGD</span><span class="m">May 2026 – Present</span></div>
+<ul><li>Contributed to 10+ live projects across front-end and back-end development.</li><li>Built multiple static websites and 3–4 dynamic web applications using React, Node.js and PHP.</li><li>Delivered complete projects from client requirements to deployment.</li></ul></div>
+<div class="item"><div class="row"><span class="t">BPO Associate (Non-Voice), Techmango</span><span class="m">Sep 2025 – Dec 2025</span></div>
+<ul><li>Supported the AI/ML team by testing an AI chatbot for accurate product-solution responses.</li></ul></div>
+</div></section>
+<section id="education"><h2>Education</h2>
+<div>
+<div class="item"><div class="row"><span class="t">B.Com (Computer Applications)</span><span class="m">2025 · 70%</span></div><div class="m">Mangayarkarasi College of Arts and Science for Women</div></div>
+<div class="item"><div class="row"><span class="t">Full Stack Development Course (1 Year)</span><span class="m">Jan 2025 – Dec 2025</span></div><div class="m">Apollo Institute</div></div>
+</div></section>
+<section id="contact"><h2>Contact</h2>
+<div><div><a href="mailto:gayathrimuthukrishnan22@gmail.com">gayathrimuthukrishnan22@gmail.com</a></div><div><a href="tel:+918778803303">+91 87788 03303</a></div><div><a href="https://github.com/gayathrimuthukrishnan22-spec">github.com/gayathrimuthukrishnan22-spec</a></div></div></section>
+<footer><span>© 2026 Gayathri Muthukrishnan</span><span>Coimbatore, Tamil Nadu</span></footer>
+</div>
+<script>
+(function(){
+var s=document.querySelectorAll('section'),st=document.querySelectorAll('.stat b');
+function count(e){var n=+e.dataset.n,x=e.dataset.s,i=0,t=setInterval(function(){i++;e.textContent=i+x;if(i>=n)clearInterval(t)},n>5?90:200)}
+if(!('IntersectionObserver' in window)){s.forEach(function(e){e.classList.add('in')});st.forEach(function(e){e.textContent=e.dataset.n+e.dataset.s});}
+else{var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{threshold:.12});s.forEach(function(e){o.observe(e)});
+var o2=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){count(x.target);o2.unobserve(x.target)}})},{threshold:.6});st.forEach(function(e){o2.observe(e)})}
+var w=['Full Stack Developer','React Developer','Node.js Developer','Problem Solver'],wi=0,ci=0,del=false,el=document.getElementById('tw');
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){ci=w[0].length;del=true;
+(function tick(){var c=w[wi];if(del){ci--;if(ci<=0){del=false;wi=(wi+1)%w.length}}else{ci++;if(ci>=w[wi].length)del=true}
+el.textContent=w[wi].slice(0,Math.max(ci,0));setTimeout(tick,del&&ci===w[wi].length?1600:(del?45:90))})();}
+var g=document.getElementById('glow');
+if(window.matchMedia('(hover: hover)').matches){document.addEventListener('mousemove',function(e){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'})}
+})();
+</script>
+</body>
+</html>
